@@ -1,0 +1,51 @@
+<html>
+
+<head>
+	<title>Purple - Great Simplicity</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div id="box">
+
+		<h1 id="title">Wemo Extension</h1>
+		<!--ul id="nav">
+			<li><a href="../index.html">Gray</a></li>
+			<li><a href="../blue/index.html">Blue</a></li>
+			<li><a href="../green/index.html">Green</a></li>
+			<li><a href="../red/index.html">Red</a></li>
+			<li><a href="index.html" class="selected">Purple</a></li>
+		</ul-->
+
+		<div id="header">
+			<img src="images/Block2.png">
+		</div>
+		<div id="body">
+			<div id="main">
+				<h2>Wemo Extension Structure explained</h2>
+				<p> Wemo communicates with SSPD Protocol while Websocket uses HTTP. As such, the protocols are incompatible and an intermediary server has to be written that will recieve data from the Wemo and communicate with Scratch via WebSocket</p>
+				<img src = 'images/Diagram.png' style = "width: 50%; height: 50%;">
+				<br></br>
+				<h4><b>JavaScript</b></h4>
+					<p><u>Serverside:</u> is a combination of a WemoModule and WebSocketModule. WemoModule proccess all the logic and communicates with the Wemo. The WebSocketModule maintains the socket connection and passes on information</p>
+					<p><u>ClientSide</u> A Wemoclient that attaches all WebSocket events and processes the received Data from the server. Provides 2 blocks currently: A block to turn on/off the Wemo and a block to read the state of the Wemo</p>
+				<br><br><br>
+			</div>
+			<div id="side">
+				<h2></h2><br>
+					<img src = "">
+				<br><br>
+			</div>
+		</div>
+
+
+		<div id="foot">
+			<p><a href = "https://github.com/Oliver-Y/WeMo"> OliverY/Wemo </a> </p>
+		</div>
+
+	</div>
+
+</body>
+</html>
