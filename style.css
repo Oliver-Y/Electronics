@@ -1,0 +1,43 @@
+/* Purple Styles */
+
+body {background: #EDE1F2; font-family: 'Open Sans', 'Droid Sans', Arial, sans-serif; font-size: 13px;}
+#box {margin: 20px auto; padding: 20px; width: 800px; background: white; border: 1px solid #D8C1E3; box-shadow: 0px 0px 10px #CCC; -moz-box-shadow: 0px 0px 10px #CCC; -webkit-box-shadow: 0px 0px 10px #CCC;}
+
+p {color: #222; text-align: justify;}
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+h1 {font-size: 30px; letter-spacing: -2px; padding: 0;}
+h2 {font-size: 25px;}
+h3 {font-size: 23px;}
+h4 {font-size: 20px; text-transform: uppercase; letter-spacing: 1px;}
+h5 {font-size: 20px; text-transform: uppercase; letter-spacing: 1px; color: #555;}
+h6 {font-size: 20px; color: #555;}
+
+a {color: purple; text-decoration: underline;}
+a:hover {color: black; text-decoration: none;}
+a:active {color: purple; text-decoration: none;}
+a:visited {color: purple; text-decoration: underline;}
+
+ul li {margin-bottom: 10px;}
+
+#title {float: left; margin-bottom: 15px;}
+
+#nav {float: right; padding: 0; margin: 10px 0 0 0;}
+#nav li {display: inline; line-height: 34px;}
+#nav li a {background: #8C2EB8; color: white; font-size: 14px; font-family: 'Open Sans'; font-weight: bold; text-transform: uppercase; padding: 7px 10px 8px 10px; text-decoration: none;}
+#nav li a:hover {background: #6E2191;}
+#nav li a:active {background: #581975;}
+#nav li a.selected {background: #581975;}
+#nav li a.selected:hover {background: #44115C;}
+#nav li a.selected:active {background: #581975;}
+
+#header {clear: both;}
+
+#body {margin-top: 20px;}
+#main {float: left; width: 575px; margin: 0;}
+#side {float: right; width: 200px; padding: 0; color: #555;}
+	#side a {text-decoration: none;}
+	#side h2 {color: gray; text-align: right; letter-spacing: 2px; margin: 0; text-transform: uppercase;}
+	#side h6 {color: #555; text-align: right; float: right; width: 175px; padding: 10px; font-weight: normal; font-size: 15px; background: #F3EBF7; margin: 0 0 5px 0; border: 1px solid #E0CAEB;}
+	#side h6:hover {color: #222; background: #EADAF2; border: 1px solid #D8C1E3;}
+#foot {clear: both; color: black; background: #EADAF2; padding: 10px 20px;}
+	#foot p {margin: 0; text-align: right;}
