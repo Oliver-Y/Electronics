@@ -22,11 +22,11 @@
 				<div id="topic">
 				<h2>Attiny84</h2>
 				<p> A few more pins than the Attiny85. 4 programming pins. 8 IO Pins</p>
-				<img src = 'images/Diagram.png'>
+				<img src = 'sources/Diagram.png'>
 				<h4><b>First_trial</b></h4>
 				<p> Delayed turning on an LED light by 5 seconds </p>
 				<video width = "320" height = "240" controls>
-					<source src = "video/Video.mp4" type = "video/mp4">
+					<source src = "sources/Video.mp4" type = "video/mp4">
 				</video>
 				<!-- Embded Video -->
 				<h4><b>h-bridge simluation </b> </h4>
@@ -40,31 +40,48 @@
 			</div>
 				<div id="topic">
 					<h4><b>RC Car</b></h4>
-					<img src = 'images/Diagram.png'>
+					<img src = 'sources/RCcar.png'>
 					<h4><b>IC'S</b></h4>
 						<p><u>NRF51:</u> Bluetooth IC part of the MDBT40 used in the MDBT40 module. Has bluetooth functions, 31 general IO pins, PWM, and other prebuilt services</p>
 						<p><u>TFNG</u> H-Bridge IC that controls the motor logic</p>
-						<img src = 'images/Diagram.png'>
+						<img src = 'sources/IC.png'>
 					<br><br><br>
+
+					<h6> Milling and Making the board </h6>
+					<video width = "320" height = "240" controls>
+						<source src = "sources/board.mp4" type = "video/mp4">
+					</video>
+					<img src = 'sources/board.png'>
+					<h6> Trial #0.5: </h6>
+					<p> testing out the bluetooth chip, works pretty well! </p>
+					<video width = "320" height = "240" controls>
+						<source src = "sources/BLE.mp4" type = "video/mp4">
+					</video>
+					<video width = "320" height = "240" controls>
+						<source src = "sources/BLE2.mp4" type = "video/mp4">
+					</video>
+
+
 					<h6> Trial #1: </h6>
 						<p> After the mill came out pretty well (with the occassional copper peeling).
 							Then realized the TBFNG66 IC was not lining up. Accidentally misread the datasheet, and set the pin lengths too short
 							(only accounted for the bent part that lay on the track). Redid the footprint,
 							made sure to leave some extra room for soldering. Moral of the story: No harm no foul in extra long pins I guess. </p>
-						<img src = 'images/Diagram.png'>
+						<img src = 'sources/trial1.png'>
+
 					<h6> Trial #2: </h6>
 						<p> <b>Unleashed the Magic Smoke!!!!!</b> Really really wished I was recording... Realized I used an outdated version for the footprint
 							of the voltage regulator. VCC was thus shorting out to ground.
 							After quick modifications to the pins and also the traces,, went right down back to the fab lab
 							for a quick mill.</p>
-							<img src = 'images/Diagram.png'>
+							<img src = 'sources/trial2.png'>
 					<h6> Trial #3: </h6>
 						<p> Debugging hardware is so <b>hard!</b> After frying the voltage regulator, resoldered everything.
 							6V was accidentally conncted to the last pin on the TBFNG66 as such,
 							might have run 6V throught he bluetooth madule (which is btw 3 V higher than the maximum rating).
 							Suspected that the TBFNG was fried, turns out the bluetooth module may be too.
 							Dam..... now for some reason VCC and Ground are shorting. </p>
-							<img src = 'images/Diagram.png'>
+							<img src = 'sources/trial3.png'>
 				</div>
 			</div>
 			<div id="side">
