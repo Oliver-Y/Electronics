@@ -5,44 +5,76 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-
 	<div id="box">
 
-		<h1 id="title">Wemo Extension</h1>
-		<!--ul id="nav">
-			<li><a href="../index.html">Gray</a></li>
-			<li><a href="../blue/index.html">Blue</a></li>
-			<li><a href="../green/index.html">Green</a></li>
-			<li><a href="../red/index.html">Red</a></li>
-			<li><a href="index.html" class="selected">Purple</a></li>
-		</ul-->
+		<h1 id="title">Electronics</h1>
+		<ul id="nav">
+			<li><a href= "https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk5.v11.0.0%2Flib_gpiote.html">Nordic Library</a></li>
+			<li><a href="https://github.com/lab11/nrf5x-base">NRF Prebuilt Library</a></li>
+			<li><a href="https://github.com/Oliver-Y/Electronics">GitHub</a></li>
+			<li><a href="https://docs.google.com/document/d/1ZLPP1CkuIOsRK_kniAXhs9q3syjZmg9fLqM8jI1wQv4/edit?usp=sharing">Personal Notes</a></li>
+			<li><a href="index.html" class="selected">CSS template</a></li>
+		</ul>
 
-		<div id="header">
-			<img src="images/Block2.png">
-		</div>
 		<div id="body">
 			<div id="main">
-				<h2>Wemo Extension Structure explained</h2>
-				<p> Wemo communicates with SSPD Protocol while Websocket uses HTTP. As such, the protocols are incompatible and an intermediary server has to be written that will recieve data from the Wemo and communicate with Scratch via WebSocket</p>
-				<img src = 'images/Diagram.png' style = "width: 50%; height: 50%;">
-				<br></br>
-				<h4><b>JavaScript</b></h4>
-					<p><u>Serverside:</u> is a combination of a WemoModule and WebSocketModule. WemoModule proccess all the logic and communicates with the Wemo. The WebSocketModule maintains the socket connection and passes on information</p>
-					<p><u>ClientSide</u> A Wemoclient that attaches all WebSocket events and processes the received Data from the server. Provides 2 blocks currently: A block to turn on/off the Wemo and a block to read the state of the Wemo</p>
-				<br><br><br>
+				<div id="topic">
+				<h2>Attiny84</h2>
+				<p> A few more pins than the Attiny85. 4 programming pins. 8 IO Pins</p>
+				<img src = 'images/Diagram.png'>
+				<h4><b>First_trial</b></h4>
+				<p> Delayed turning on an LED light by 5 seconds </p>
+				<video width = "320" height = "240" controls>
+					<source src = "video/Video.mp4" type = "video/mp4">
+				</video>
+				<!-- Embded Video -->
+				<h4><b>h-bridge simluation </b> </h4>
+				<p> 2 Pins waiting for interupts linked to the breadboard button.
+					Then will turn the corresponding LED's on </p>
+
+				<!-- embeded Video -->
+				<!--h4><b></b></h4>
+				<br><br><br-->
+				<p>----------------------------------------------------------------------------------------------------------------------------------------<p/>
+			</div>
+				<div id="topic">
+					<h4><b>RC Car</b></h4>
+					<img src = 'images/Diagram.png'>
+					<h4><b>IC'S</b></h4>
+						<p><u>NRF51:</u> Bluetooth IC part of the MDBT40 used in the MDBT40 module. Has bluetooth functions, 31 general IO pins, PWM, and other prebuilt services</p>
+						<p><u>TFNG</u> H-Bridge IC that controls the motor logic</p>
+						<img src = 'images/Diagram.png'>
+					<br><br><br>
+					<h6> Trial #1: </h6>
+						<p> After the mill came out pretty well (with the occassional copper peeling).
+							Then realized the TBFNG66 IC was not lining up. Accidentally misread the datasheet, and set the pin lengths too short
+							(only accounted for the bent part that lay on the track). Redid the footprint,
+							made sure to leave some extra room for soldering. Moral of the story: No harm no foul in extra long pins I guess. </p>
+						<img src = 'images/Diagram.png'>
+					<h6> Trial #2: </h6>
+						<p> <b>Unleashed the Magic Smoke!!!!!</b> Really really wished I was recording... Realized I used an outdated version for the footprint
+							of the voltage regulator. VCC was thus shorting out to ground.
+							After quick modifications to the pins and also the traces,, went right down back to the fab lab
+							for a quick mill.</p>
+							<img src = 'images/Diagram.png'>
+					<h6> Trial #3: </h6>
+						<p> Debugging hardware is so <b>hard!</b> After frying the voltage regulator, resoldered everything.
+							6V was accidentally conncted to the last pin on the TBFNG66 as such,
+							might have run 6V throught he bluetooth madule (which is btw 3 V higher than the maximum rating).
+							Suspected that the TBFNG was fried, turns out the bluetooth module may be too.
+							Dam..... now for some reason VCC and Ground are shorting. </p>
+							<img src = 'images/Diagram.png'>
+				</div>
 			</div>
 			<div id="side">
 				<h2></h2><br>
-					<img src = "">
 				<br><br>
 			</div>
 		</div>
 
-
 		<div id="foot">
-			<p><a href = "https://github.com/Oliver-Y/WeMo"> OliverY/Wemo </a> </p>
+			<p><a href = "https://github.com/Oliver-Y/Electronics"> OliverY/Electronics </a> </p>
 		</div>
 
 	</div>

@@ -1,0 +1,5 @@
+r
+loadfile _build/first_ex_s130.hex 
+r
+g
+exit

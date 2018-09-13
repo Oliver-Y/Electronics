@@ -1,16 +1,17 @@
 /* Purple Styles */
 
-body {background: #EDE1F2; font-family: 'Open Sans', 'Droid Sans', Arial, sans-serif; font-size: 13px;}
+body {background: #EDE1F2; font-family: 'Open Sans', 'Droid Sans', Arial, sans-serif; font-size: 12px;}
 #box {margin: 20px auto; padding: 20px; width: 800px; background: white; border: 1px solid #D8C1E3; box-shadow: 0px 0px 10px #CCC; -moz-box-shadow: 0px 0px 10px #CCC; -webkit-box-shadow: 0px 0px 10px #CCC;}
 
 p {color: #222; text-align: justify;}
 h1, h2, h3, h4, h5, h6 {margin: 0;}
-h1 {font-size: 30px; letter-spacing: -2px; padding: 0;}
+h1 {font-size: 35px; letter-spacing: -2px; padding: 0;}
 h2 {font-size: 25px;}
 h3 {font-size: 23px;}
 h4 {font-size: 20px; text-transform: uppercase; letter-spacing: 1px;}
 h5 {font-size: 20px; text-transform: uppercase; letter-spacing: 1px; color: #555;}
-h6 {font-size: 20px; color: #555;}
+h6 {font-size: 15px; color: #555;}
+img {width: 50%; height: 50%;}
 
 a {color: purple; text-decoration: underline;}
 a:hover {color: black; text-decoration: none;}
@@ -21,7 +22,9 @@ ul li {margin-bottom: 10px;}
 
 #title {float: left; margin-bottom: 15px;}
 
-#nav {float: right; padding: 0; margin: 10px 0 0 0;}
+#topic {margin-bottom: 20px; margin-top: 20px;}
+
+#nav {float: left; padding: 0; margin: 10px 0 0 0;}
 #nav li {display: inline; line-height: 34px;}
 #nav li a {background: #8C2EB8; color: white; font-size: 14px; font-family: 'Open Sans'; font-weight: bold; text-transform: uppercase; padding: 7px 10px 8px 10px; text-decoration: none;}
 #nav li a:hover {background: #6E2191;}

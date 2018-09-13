@@ -1,0 +1,21 @@
+_build/system_nrf51.o: \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/toolchain/system_nrf51.c \
+ /usr/local/gcc-arm-none-eabi-6-2017-q1-update/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h \
+ /usr/local/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include/stdint.h \
+ /usr/local/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include/machine/_default_types.h \
+ /usr/local/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include/sys/features.h \
+ /usr/local/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include/_newlib_version.h \
+ /usr/local/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include/sys/_intsup.h \
+ /usr/local/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include/sys/_stdint.h \
+ /usr/local/gcc-arm-none-eabi-6-2017-q1-update/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/device/nrf.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/device/nrf51.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/toolchain/cmsis/include/core_cm0.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/toolchain/cmsis/include/core_cmInstr.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/toolchain/cmsis/include/cmsis_gcc.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/toolchain/cmsis/include/core_cmFunc.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/toolchain/system_nrf51.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/device/nrf51_bitfields.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/device/nrf51_deprecated.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/device/compiler_abstraction.h \
+ nrf5x-base/make/../sdk/nrf5_sdk_12.2.0/components/toolchain/system_nrf51.h

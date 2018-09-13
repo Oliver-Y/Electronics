@@ -1,0 +1,271 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:Motor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_PNP_BCE Q1
+U 1 1 5B48C492
+P 7650 4400
+F 0 "Q1" H 7850 4450 50  0000 L CNN
+F 1 "Q_PNP_BCE" H 6750 4450 50  0000 L CNN
+F 2 "" H 7850 4500 50  0001 C CNN
+F 3 "" H 7650 4400 50  0001 C CNN
+	1    7650 4400
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PNP_BCE Q4
+U 1 1 5B48C4CB
+P 9200 4400
+F 0 "Q4" H 9400 4450 50  0000 L CNN
+F 1 "Q_PNP_BCE" H 9400 4350 50  0000 L CNN
+F 2 "" H 9400 4500 50  0001 C CNN
+F 3 "" H 9200 4400 50  0001 C CNN
+	1    9200 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Q_NPN_BCE Q2
+U 1 1 5B48C547
+P 7650 5100
+F 0 "Q2" H 7850 5150 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 6950 4900 50  0000 L CNN
+F 2 "" H 7850 5200 50  0001 C CNN
+F 3 "" H 7650 5100 50  0001 C CNN
+	1    7650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q3
+U 1 1 5B48C59E
+P 9150 5100
+F 0 "Q3" H 9350 5150 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 8650 4900 50  0000 L CNN
+F 2 "" H 9350 5200 50  0001 C CNN
+F 3 "" H 9150 5100 50  0001 C CNN
+	1    9150 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 5B48CE78
+P 8000 4500
+F 0 "D1" H 8000 4600 50  0000 C CNN
+F 1 "D" H 8000 4400 50  0000 C CNN
+F 2 "" H 8000 4500 50  0001 C CNN
+F 3 "" H 8000 4500 50  0001 C CNN
+	1    8000 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L D D3
+U 1 1 5B48CED0
+P 8800 4500
+F 0 "D3" H 8800 4600 50  0000 C CNN
+F 1 "D" H 8800 4400 50  0000 C CNN
+F 2 "" H 8800 4500 50  0001 C CNN
+F 3 "" H 8800 4500 50  0001 C CNN
+	1    8800 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L D D2
+U 1 1 5B48CF0B
+P 8000 5150
+F 0 "D2" H 8000 5250 50  0000 C CNN
+F 1 "D" H 8000 5050 50  0000 C CNN
+F 2 "" H 8000 5150 50  0001 C CNN
+F 3 "" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L D D4
+U 1 1 5B48CF4B
+P 8800 5150
+F 0 "D4" H 8800 5250 50  0000 C CNN
+F 1 "D" H 8800 5050 50  0000 C CNN
+F 2 "" H 8800 5150 50  0001 C CNN
+F 3 "" H 8800 5150 50  0001 C CNN
+	1    8800 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01 J1
+U 1 1 5B4DFEC5
+P 8050 3500
+F 0 "J1" H 8050 3600 50  0000 C CNN
+F 1 "Conn_01x01" H 8050 3400 50  0000 C CNN
+F 2 "" H 8050 3500 50  0001 C CNN
+F 3 "" H 8050 3500 50  0001 C CNN
+	1    8050 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J6
+U 1 1 5B51F422
+P 9400 3500
+F 0 "J6" H 9400 3600 50  0000 C CNN
+F 1 "Conn_01x01" H 9400 3400 50  0000 C CNN
+F 2 "" H 9400 3500 50  0001 C CNN
+F 3 "" H 9400 3500 50  0001 C CNN
+	1    9400 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 5100 7450 5100
+Wire Wire Line
+	9400 4400 9550 4400
+Wire Wire Line
+	7800 5300 7800 5450
+Wire Wire Line
+	7800 5450 9050 5450
+Wire Wire Line
+	9050 5450 9050 5300
+Wire Wire Line
+	7800 5300 7750 5300
+Wire Wire Line
+	7750 4200 9100 4200
+Wire Wire Line
+	9100 4600 9100 4900
+Wire Wire Line
+	9100 4900 9050 4900
+Connection ~ 8000 5450
+Wire Wire Line
+	8000 5450 8000 5300
+Wire Wire Line
+	8000 5050 8000 4900
+Wire Wire Line
+	8000 4900 7750 4900
+Connection ~ 8000 4200
+Wire Wire Line
+	7750 4900 7750 4600
+Wire Wire Line
+	8000 4650 7750 4650
+Connection ~ 7750 4650
+Wire Wire Line
+	8000 4350 8000 4200
+Wire Wire Line
+	8800 4350 8800 4200
+Connection ~ 8800 4200
+Wire Wire Line
+	8800 4650 9100 4650
+Connection ~ 9100 4650
+Wire Wire Line
+	8800 5300 8800 5450
+Connection ~ 8800 5450
+Wire Wire Line
+	8800 5000 8800 4850
+Wire Wire Line
+	8800 4850 9100 4850
+Connection ~ 9100 4850
+Wire Wire Line
+	9400 4100 9400 3700
+Connection ~ 9400 4100
+Connection ~ 8450 4200
+Wire Wire Line
+	8450 4200 8450 3100
+Wire Wire Line
+	8400 5450 8400 6200
+Connection ~ 8400 5450
+$Comp
+L Conn_01x01 J4
+U 1 1 5B51FA47
+P 8450 2900
+F 0 "J4" H 8450 3000 50  0000 C CNN
+F 1 "Conn_01x01" H 8450 2800 50  0000 C CNN
+F 2 "" H 8450 2900 50  0001 C CNN
+F 3 "" H 8450 2900 50  0001 C CNN
+	1    8450 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J3
+U 1 1 5B51FAB2
+P 8400 6400
+F 0 "J3" H 8400 6500 50  0000 C CNN
+F 1 "Conn_01x01" H 8400 6300 50  0000 C CNN
+F 2 "" H 8400 6400 50  0001 C CNN
+F 3 "" H 8400 6400 50  0001 C CNN
+	1    8400 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01 J2
+U 1 1 5B51FDF0
+P 8150 4750
+F 0 "J2" H 8150 4850 50  0000 C CNN
+F 1 "Conn_01x01" H 8150 4650 50  0000 C CNN
+F 2 "" H 8150 4750 50  0001 C CNN
+F 3 "" H 8150 4750 50  0001 C CNN
+	1    8150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5B51FE57
+P 8600 4750
+F 0 "J5" H 8600 4850 50  0000 C CNN
+F 1 "Conn_01x01" H 8600 4650 50  0000 C CNN
+F 2 "" H 8600 4750 50  0001 C CNN
+F 3 "" H 8600 4750 50  0001 C CNN
+	1    8600 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4750 8800 4750
+Connection ~ 9100 4750
+Wire Wire Line
+	7750 4750 7950 4750
+Connection ~ 7750 4750
+Wire Wire Line
+	7450 4400 7350 4400
+Wire Wire Line
+	7350 4400 7350 5100
+Wire Wire Line
+	9350 5100 9550 5100
+Wire Wire Line
+	9550 5100 9550 4400
+$EndSCHEMATC
